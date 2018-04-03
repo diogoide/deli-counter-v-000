@@ -14,9 +14,11 @@ end
 
 def take_a_number(katz_deli, name)
   if katz_deli.size == 0
+    katz.deli << "#{name}"
     puts "Welcome, #{name}. You are number 1 in line."
   else
     number = katz_deli.size + 1
+    katz.deli << "#{name}"
     puts "Welcome, #{name}. You are number #{number} in line."
-  end 
+  end
 end
